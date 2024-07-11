@@ -59,6 +59,10 @@ body{
     font-family: var(--fonte-secundaria);
 }
 
+.apresentacao__conteudo__imagem{
+    align-self: start;
+}
+
 .apresentacao__links{
     display: flex;
     flex-direction: column;
