@@ -59,6 +59,11 @@ body{
     font-family: var(--fonte-secundaria);
 }
 
+a[href="#ultimo-paragrafo"]{
+    color: #B85C38;
+    text-decoration: none;
+}
+
 .apresentacao__conteudo__imagem{
     align-self: start;
 }
