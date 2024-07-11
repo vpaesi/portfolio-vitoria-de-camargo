@@ -1,6 +1,7 @@
 # Olá! Bem vindo ao meu portfólio.
 
-![Imagem da home do meu portfolio] (https://github.com/vpaesi/portfolio-vitoria-de-camargo/blob/main/assets/portfolio.png?raw=true)
+![image](https://github.com/vpaesi/portfolio-vitoria-de-camargo/assets/147994680/e73b832e-61b9-4510-87e2-c674633adacb)
+
 
 ## Ferramentas utilizadas:
 
