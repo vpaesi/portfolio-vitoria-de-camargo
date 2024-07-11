@@ -149,5 +149,6 @@ a[href="#ultimo-paragrafo"]{
 
     .apresentacao__conteudo__imagem{
         width: 80%;
+        margin: auto;
     }
 }
