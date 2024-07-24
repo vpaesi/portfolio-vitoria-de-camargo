@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --cor-primaria: linear-gradient(97.54deg, #2d2424 35.49%, #e0c097 165.37%);
+  --cor-secundaria: #e0c097;
+  --cor-terciaria: #b85c38;
+  --cor-hover: #5c3d2e;
+
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background: var(--cor-primaria) fixed;
+  color: var(--cor-secundaria);
+}
+
+.cabecalho {
+  padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalho__menu__link {
+  font-family: var(--fonte-secundaria);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--cor-terciaria);
+  text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+  transform: matrix3d(360deg);
+  background-color: transparent;
+}
+
+.apresentacao {
+  padding: 3% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.apresentacao__conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 2.25rem;
+  font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque {
+  color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+  font-size: 1.5rem;
+  font-family: var(--fonte-secundaria);
+}
+
+a[href="#ultimo-paragrafo"] {
+  color: #b85c38;
+  text-decoration: none;
+}
+
+.apresentacao__conteudo__imagem {
+  align-self: start;
+}
+
+.apresentacao__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid var(--cor-terciaria);
+  width: 60%;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__navegacao:hover {
+  background-color: var(--cor-hover);
+  transform: rotateX(360deg);
+}
+
+.apresentacao__links__navegacao:active {
+  background-color: var(--cor-terciaria);
+}
+
+.apresentacao__links__navegacao_imagem {
+  width: 2rem;
+}
+
+.container__img {
+  display: flex;
+  flex-direction: column;
+  max-width: 530px;
+}
+
+.img__perfil {
+  width: 50%;
+}
+
+.carrossel__titulo {
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-secundaria);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.swiper {
+  width: 530px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  height: 270px;
+  transition: transform 0.5s ease;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.1);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  padding: 5px;
+  border-radius: 50px;
+  background: var(--cor-secundaria);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: var(--cor-terciaria);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--cor-secundaria) !important;
+}
+
+a,
+.swiper-button-prev,
+.swiper-button-next {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover,
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: var(--cor-hover);
+  transform: scale(1.1);
+}
+
+.rodape {
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  padding: 24px;
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  body {
+    width: 100%vw;
+  }
+  .cabecalho {
+    padding: 5%;
+  }
+
+  .cabecalho__menu {
+    justify-content: center;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .apresentacao__conteudo {
+    width: auto;
+  }
+
+  .apresentacao__links__navegacao {
+    width: 60%;
+  }
+
+  .apresentacao__imagem {
+    width: 80%;
+  }
+
+  .apresentacao__conteudo__imagem {
+    width: 80%;
+    margin: auto;
+  }
+
+  .img__perfil img {
+    width: 100vw;
+    max-width: 500px;
+  }
+
+  .swiper {
+    width: 100vw;
+    max-width: 500px;
+  }
+}
